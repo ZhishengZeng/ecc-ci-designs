@@ -1,7 +1,7 @@
 [design]
 name = "Fstage-scpu"
 top = "NPC"
-rtl = ["filelist.f"]
+rtl = ["src/NPC.sv"]
 clock_port = "clock"
 frequency_mhz = 50.0
 

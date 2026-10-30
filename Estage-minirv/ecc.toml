@@ -1,7 +1,7 @@
 [design]
 name = "Estage-minirv"
 top = "NPC"
-rtl = ["filelist.f"]
+rtl = ["src/filelist.f"]
 clock_port = "clock"
 frequency_mhz = 50.0
 

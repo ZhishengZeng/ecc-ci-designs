@@ -10,9 +10,10 @@ design directory. Paths in `ecc.toml` are relative to that directory.
 
 The five ysyx cores (`Bstage` through `Fstage`) use the `NPC` top module,
 the `clock` port, and the ICS55 `rtl2gds` flow with a 50 MHz target and
-35% core utilization. Each core runs as a separate project and reads its
-SystemVerilog sources through `filelist.f`, including the single-file
-`Fstage-scpu` core.
+35% core utilization. Each core runs as a separate project with its
+SystemVerilog sources under `src/`; the multi-file cores list them through
+`src/filelist.f`, while the single-file `Fstage-scpu` core names its source
+directly in `ecc.toml`.
 
 `gcd_icg` is intentionally a gate-level `syn_sta` fixture. It keeps its
 original DEF/SPEF timing inputs and checks that its integrated clock-gate
